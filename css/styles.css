@@ -201,6 +201,7 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    background: linear-gradient(#fefefe, #888888);
 }
 
 .mapa p{
@@ -224,7 +225,8 @@ td, th{
 }
 
 .listaDiferenciales{
-    width: 40%;
+    width: 39%;
+    margin-right: 1%;
     display: inline-block;
     vertical-align: top;
 }
@@ -233,8 +235,11 @@ td, th{
     line-height: 1.5;
 }
 
-/* Pongo en negrita la primera linea de los items */
+.items::before{
+    content: "✔";
+}
 
+/* Pongo en negrita la primera linea de los items */
 .items:first-child{
     font-weight: bold;
 }
